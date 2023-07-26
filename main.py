@@ -600,27 +600,28 @@ async def main() -> None:
             print("Invalid room number")
             continue
 
-        color = input("Enter color (green, red, off): ")
+        if option == "r":
+            color = input("Enter color (green, red, off): ")
 
-        if color not in valid_colors:
-            print("Invalid color")
-            continue
+            if color not in valid_colors:
+                print("Invalid color")
+                continue
 
         await reset_segments()
 
         match option:
             case "1":
-                await room_one(color)
+                await room_one("green")
             case "2":
-                await room_two(color)
+                await room_two("green")
             case "3":
-                await room_three(color)
+                await room_three("green")
             case "4":
-                await room_four(color)
+                await room_four("green")
             case "5":
-                await room_five(color)
+                await room_five("green")
             case "6":
-                await room_six(color)
+                await room_six("green")
             case "r":
                 await all_color(color)
             case _:
