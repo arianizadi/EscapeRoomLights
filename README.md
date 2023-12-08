@@ -2,7 +2,7 @@
 
 <div align="center">
     <img src="/assets/wled_logo_akemi.png" alt="Logo" height="80">
-  <h3 align="center">Escape Room Light Controller</h3>
+  <h1 align="center">Escape Room Light Controller</h3>
 
   <p align="center">
     A project aimed to easily manage the lights in the GenCyber 2023 Escape Room.
